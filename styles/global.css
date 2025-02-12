@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+/* Brand */
+--brand-gradient: #FC4A1A;
+--brand-color-primary: #F7B733;
+--brand-color-secondary: #FC4A1A;
+
+/* Base */
+--background-color: #09090B;
+--surface-color: #18181B;
+--stroke-color: #27272A;
+--text-color-primary: #A1A1AA;
+--text-color-secondary: #F4F4F5;
+
+/* Font */
+--inter-font: 'Inter', 'Sans-serif';
+--inter-h1: 800 64px/120% var(--inter-font);
+--inter-h2: 800 48px/120% var(--inter-font);
+--inter-h3: 800 32px/120% var(--inter-font);
+--inter-span: 500 14px/100% var(--inter-font);
+--inter-p: 400 16px/160% var(--inter-font);
+
+/* Mobile Font */
+--mobile-h1: 800 40px/120% var(--inter-font);
+--mobile-h2: 800 24px/120% var(--inter-font);
+--mobile-h3: 800 24px/120% var(--inter-font);
+--mobile-span: 500 14px/100% var(--inter-font);
+--mobile-p: 400 16px/160% var(--inter-font);
+}
+
+body{
+  h1{
+    font: var(--inter-h1);
+  }
+
+  h2{
+    font: var(--inter-h2);
+  }
+
+  h3{
+    font: var(--inter-h3);
+  }
+
+  span{
+    font: var(--inter-span);
+  }
+
+  p{
+    font: var(--inter-p);
+  }
+}
