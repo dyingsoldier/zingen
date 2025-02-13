@@ -1,56 +1,88 @@
-*{
-  margin: 0;
-  padding: 0;
+*,
+*::before,
+*::after{
   box-sizing: border-box;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
 :root{
-/* Brand */
---brand-gradient: #FC4A1A;
---brand-color-primary: #F7B733;
---brand-color-secondary: #FC4A1A;
+  /* Brand */
+  --brand-gradient: #FC4A1A;
+  --brand-color-primary: #F7B733;
+  --brand-color-secondary: #FC4A1A;
+  
+  /* Base */
+  --background-color: #09090B;
+  --surface-color: #18181B;
+  --stroke-color: #27272A;
+  --text-color-primary: #A1A1AA;
+  --text-color-secondary: #F4F4F5;
+  
+  /* Fonts   FF => Font family */
+  --ff-inter: 'Inter', system-ui, sans-serif;
+  
+  /* FW => Font Weight */
+  --fw-base: 400;
+  --fw-md: 500;
+  --fw-bold: 800;
+  
+  /* FS => Font Size  */
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 2.5rem;
+}
 
-/* Base */
---background-color: #09090B;
---surface-color: #18181B;
---stroke-color: #27272A;
---text-color-primary: #A1A1AA;
---text-color-secondary: #F4F4F5;
+@media (width >= 80em){
+  :root{
+    --fs-lg: 2rem;
+    --fs-xl: 3rem;
+    --fs-2xl: 4rem;
+  }
+}
 
-/* Font */
---inter-font: 'Inter', 'Sans-serif';
---inter-h1: 800 64px/120% var(--inter-font);
---inter-h2: 800 48px/120% var(--inter-font);
---inter-h3: 800 32px/120% var(--inter-font);
---inter-span: 500 14px/100% var(--inter-font);
---inter-p: 400 16px/160% var(--inter-font);
-
-/* Mobile Font */
---mobile-h1: 800 40px/120% var(--inter-font);
---mobile-h2: 800 24px/120% var(--inter-font);
---mobile-h3: 800 24px/120% var(--inter-font);
---mobile-span: 500 14px/100% var(--inter-font);
---mobile-p: 400 16px/160% var(--inter-font);
+html{
+  font-family: var(--ff-inter);
+  font-weight: var(--fw-base);
+font-size: var(--fs-base);
+line-height: 1.6;
+color: var(--text-color-primary);
 }
 
 body{
-  h1{
-    font: var(--inter-h1);
-  }
+  background-color: var(--background-color);
+}
 
-  h2{
-    font: var(--inter-h2);
-  }
+h1, h2, h3{
+  line-height: 1.2;
+  font-weight: var(--fw-bold);
+  letter-spacing: -0.04em;
+  color: var(--text-color-primary);
+}
 
-  h3{
-    font: var(--inter-h3);
-  }
+h1{
+  font-size: var(--fs-2xl)
+}
 
-  span{
-    font: var(--inter-span);
-  }
+h2{
+  font-size: var(--fs-xl);
+}
 
-  p{
-    font: var(--inter-p);
-  }
+h3{
+  font-size: var(--fs-lg);
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul [role="list"]{
+  list-style: none;
 }
