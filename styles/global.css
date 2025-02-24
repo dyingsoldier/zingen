@@ -48,8 +48,8 @@
 }
 
 html{
-  font-family: var(--ff-inter);
   font-weight: var(--fw-base);
+  font-family: var(--ff-inter);
   font-size: var(--fs-base);
   line-height: 1.6;
   color: var(--text-color-primary);
