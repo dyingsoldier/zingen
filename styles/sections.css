@@ -5,7 +5,7 @@
 
 #about{
   background-color: var(--surface-color);
-
+  
   & .even-columns{
     gap: 2rem;
   }
@@ -32,3 +32,9 @@ section{
   }
 }
 
+@media (width >= 160em){
+  #about{
+    margin: auto;
+    width: 166rem;
+  }
+}
