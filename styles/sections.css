@@ -35,6 +35,6 @@ section{
 @media (width >= 160em){
   #about{
     margin: auto;
-    width: 166rem;
+    width: 160em;
   }
 }
